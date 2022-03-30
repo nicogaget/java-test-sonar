@@ -15,3 +15,18 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  TestApplication:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récup du repo
+        uses: actions/checkout@v2
+      - name: Liste de fichier
+        run: ls
+      - name: setup jdk 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt
+      - name: Execution des tests
+        run: mvn test
