@@ -5,11 +5,11 @@ public class Calculatrice {
     private Calculatrice(){}
 
     public static int addition(int... numbers) {
-        int result = 0;
+        int resultat = 0;
         for (int number : numbers) {
-            result += number;
+            resultat += number;
         }
-        return result;
+        return resultat;
     }
 
     public static int soustraction(int... numbers) {
