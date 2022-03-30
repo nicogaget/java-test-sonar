@@ -3,15 +3,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatriceTest {
+class CalculatriceTest  {
 
     @Test
-    void addition() {
+    void testAddition() {
         int result = Calculatrice.addition(10,10,10);
         assertEquals(30, result);
     }
     @Test
-    void soustraction() {
+    void TestSoustraction() {
         int result = Calculatrice.soustraction(10,2,3);
         assertEquals(5, result);
     }
